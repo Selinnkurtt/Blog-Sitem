@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Eğlence Merkezi - Kayıt Ol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Eğlence Merkezi</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="resimler.html">Komik Resimler</a>
+        <a href="videolar.html">Trol Videolar</a>
+        <a href="kayit.html">Kayıt Ol</a>
+        <a href="giris.html">Giriş Yap</a>
+    </nav>
+
+    <main>
+        <section style="max-width: 400px; margin: 40px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: #fff; text-align: left;">
+            <h2 style="color: #ff4500; text-align: center;">Yeni Üye Kaydı</h2>
+            
+            <form action="#" method="post">
+                <div style="margin-bottom: 15px;">
+                    <label style="display:block; font-weight:bold;">Ad Soyad:</label>
+                    <input type="text" name="adsoyad" required placeholder="Adınız Soyadınız" 
+                           style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label style="display:block; font-weight:bold;">E-posta:</label>
+                    <input type="email" name="email" required placeholder="ornek@mail.com" 
+                           style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label style="display:block; font-weight:bold;">Şifre:</label>
+                    <input type="password" name="sifre" required minlength="6" placeholder="******" 
+                           style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+                </div>
+
+                <button type="submit" style="background: #ff4500; color: white; border: none; padding: 12px; width: 100%; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                    Kayıt İşlemini Tamamla
+                </button>
+            </form>
+            
+            <p style="text-align: center; margin-top: 15px; font-size: 0.9rem;">
+                Zaten üye misin? <a href="giris.htm" style="color: #ff4500;">Giriş Yap</a>
+            </p>
+        </section>
+    </main>
+
+    <footer style="margin-top: 50px;">
+        <p>&copy; 2026 Eğlence Merkezi</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğlence Merkezi - Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sadece bu sayfaya özel, resim yerine geçecek şık panelin kodları */
+        .welcome-panel {
+            margin: 40px auto;
+            max-width: 500px;
+            padding: 30px;
+            background: #fff;
+            border: 4px solid #ff4500; /* İSTEDİĞİN TURUNCU ÇERÇEVE */
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            text-align: center;
+            position: relative;
+        }
+
+        .welcome-panel h3 {
+            color: #ff4500;
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .welcome-panel p {
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        /* Panelın altına süs olarak küçük bir 'ekran ayağı' gibi parça ekleyelim */
+        .welcome-panel::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 20px;
+            background: #ff4500;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eğlence Merkezi</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="resimler.html">Komik Resimler</a>
+        <a href="videolar.html">Trol Videolar</a>
+        <a href="kayit.html">Kayıt Ol</a>
+        <a href="giris.html">Giriş Yap</a>
+    </nav>
+
+    <main>
+        <section style="padding: 20px;">
+            <h2>Hoş Geldiniz!</h2>
+            
+            <p>Eğlence Merkezi, internet dünyasındaki en komik capsleri, efsaneleşmiş yurdum insanı videolarını ve sosyal medya trollerini bir araya getirir.</p>
+            
+            <p>Aşağıdaki bölümlerden keşfe başlayabilirsiniz:</p>
+
+            <div style="margin: 25px auto; line-height: 1.8; max-width: 500px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;">
+                <p><strong>Komik Resimler:</strong> Türkiye trendi capsler.</p>
+                <p><strong>Trol Videolar:</strong> Gülmekten yoracak video derlemeleri.</p>
+            </div>
+
+            <div class="welcome-panel">
+                <h3>Hoş Geldiniz!</h3>
+                <p>Eğlenceye giden yol buradan başlar. Menüden keşfetmeye başla!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Eğlence Merkezi - Mardin Artuklu Üniversitesi</p>
+    </footer>
+</body>
+</html>
